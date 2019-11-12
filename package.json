@@ -1,0 +1,29 @@
+{
+  "name": "@bulmax/bulmax",
+  "version": "0.0.3",
+  "description": "Bulma react components",
+  "main": "index.js",
+  "public": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredev/bulmax.git"
+  },
+  "keywords": [
+    "bulma",
+    "ui",
+    "react",
+    "components"
+  ],
+  "author": "Federico Paletta <feligida63@gmail.com>",
+  "contributors": [
+    "Alessandro Camplese <ale.camplese@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fredev/bulmax/issues"
+  },
+  "homepage": "https://github.com/fredev/bulmax#readme"
+}
