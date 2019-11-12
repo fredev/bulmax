@@ -3,7 +3,7 @@
   "version": "0.0.6",
   "description": "Bulma react components",
   "main": "index.js",
-  "public": false,
+  "files": [ "dist", "README.md" ],
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack",
