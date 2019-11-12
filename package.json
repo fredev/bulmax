@@ -2,12 +2,13 @@
   "name": "@bulmax/bulmax",
   "version": "0.0.7",
   "description": "Bulma react components",
-  "main": "index.js",
+  "main": "dist/index.js",
   "files": [
     "dist",
     "README.md"
   ],
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -35,6 +36,7 @@
     "react": "^16.11.0"
   },
   "devDependencies": {
+    "typescript": "^3.7.2"
   },
   "peerDependencies": {
     "react": "^16.11.0"
