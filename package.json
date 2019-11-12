@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/fredev/bulmax/issues"
   },
-  "homepage": "https://github.com/fredev/bulmax#readme"
+  "homepage": "https://github.com/fredev/bulmax#readme",
+  "dependencies": {
+    "bulma": "^0.8.0"
+  }
 }
