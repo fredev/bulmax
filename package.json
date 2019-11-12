@@ -1,6 +1,6 @@
 {
   "name": "@bulmax/bulmax",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Bulma react components",
   "main": "index.js",
   "public": false,
@@ -28,5 +28,9 @@
   "homepage": "https://github.com/fredev/bulmax#readme",
   "dependencies": {
     "bulma": "^0.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.16.0"
   }
 }
