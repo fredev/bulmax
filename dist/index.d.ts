@@ -1,1 +1,1 @@
-export declare function testMethod(param: string): string;
+export { default as Button } from './components/Button';
