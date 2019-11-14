@@ -13,6 +13,8 @@ interface ButtonProps {
     s?: boolean;
     w?: boolean;
     d?: boolean;
+    r?: boolean;
+    rounded?: boolean;
 }
 declare const Button: React.FC<ButtonProps>;
 export default Button;

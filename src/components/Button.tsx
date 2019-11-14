@@ -1,5 +1,5 @@
 import React from 'react';
-import {button, isDanger, isInfo, isLink, isPrimary, isSuccess, isWarning} from "../classes";
+import {button, isDanger, isInfo, isLink, isPrimary, isRounded, isSuccess, isWarning} from "../classes";
 import classNames from "classnames";
 
 interface ButtonProps {
@@ -17,21 +17,39 @@ interface ButtonProps {
   s?: boolean // success
   w?: boolean // warning
   d?: boolean // danger
+  r?: boolean // rounded
+
+  rounded?: boolean
 }
 
-const Button: React.FC<ButtonProps> = props => {
+
+const Button: React.FC<ButtonProps> = (
+  {
+    children,
+    primary,
+    success,
+    link,
+    info,
+    warning,
+    danger,
+    rounded,
+    p, s, l,
+    i, w, d, r
+  }
+) => {
   const classes = classNames({
     [button]: true,
-    [isPrimary]: props.primary || props.p,
-    [isSuccess]: props.success || props.s,
-    [isLink]: props.link || props.l,
-    [isInfo]: props.info || props.i,
-    [isWarning]: props.warning || props.w,
-    [isDanger]: props.danger || props.d,
+    [isPrimary]: primary || p,
+    [isSuccess]: success || s,
+    [isLink]: link || l,
+    [isInfo]: info || i,
+    [isWarning]: warning || w,
+    [isDanger]: danger || d,
+    [isRounded]: rounded || r
   });
 
   return (
-      <button className={classes}>{props.children}</button>
+      <button className={classes}>{children}</button>
   )
 };
 
@@ -43,12 +61,14 @@ Button.defaultProps = {
   info: false,
   warning: false,
   danger: false,
+  rounded: false,
   p: false,
   l: false,
   i: false,
   s: false,
   w: false,
   d: false,
+  r: false,
 };
 
 export default Button;

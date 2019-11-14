@@ -8,3 +8,5 @@ export const isLink: string = 'is-link';
 export const isInfo: string = 'is-info';
 export const isWarning: string = 'is-warning';
 export const isDanger: string = 'is-danger';
+
+export const isRounded: string = 'is-rounded';
