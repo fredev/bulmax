@@ -1,20 +1,33 @@
 import React from 'react';
-import {isPrimary, isSuccess} from "../classes";
+import {button, isDanger, isInfo, isLink, isPrimary, isSuccess, isWarning} from "../classes";
 import classNames from "classnames";
 
 interface ButtonProps {
   children: string
   primary?: boolean
-  success?: boolean
   link?: boolean
-  input?: boolean
-  reset?: boolean
+  info?: boolean
+  success?: boolean
+  warning?: boolean
+  danger?: boolean
+
+  p?: boolean // primary
+  l?: boolean // link
+  i?: boolean // info
+  s?: boolean // success
+  w?: boolean // warning
+  d?: boolean // danger
 }
 
 const Button: React.FC<ButtonProps> = props => {
   const classes = classNames({
-    [isPrimary]: props.primary,
-    [isSuccess]: props.success,
+    [button]: true,
+    [isPrimary]: props.primary || props.p,
+    [isSuccess]: props.success || props.s,
+    [isLink]: props.link || props.l,
+    [isInfo]: props.info || props.i,
+    [isWarning]: props.warning || props.w,
+    [isDanger]: props.danger || props.d,
   });
 
   return (
@@ -24,8 +37,18 @@ const Button: React.FC<ButtonProps> = props => {
 
 Button.defaultProps = {
   children: 'Button',
-  primary: true,
+  primary: false,
   success: false,
+  link: false,
+  info: false,
+  warning: false,
+  danger: false,
+  p: false,
+  l: false,
+  i: false,
+  s: false,
+  w: false,
+  d: false,
 };
 
 export default Button;
