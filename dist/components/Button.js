@@ -1,9 +1,9 @@
 import React from 'react';
-import { button, isDanger, isInfo, isLink, isPrimary, isRounded, isSuccess, isWarning } from "../classes";
+import { button, isDanger, isInfo, isLink, isPrimary, isRounded, isSuccess, isWarning, isLight } from "../classes";
 import classNames from "classnames";
 var Button = function (_a) {
     var _b;
-    var children = _a.children, primary = _a.primary, success = _a.success, link = _a.link, info = _a.info, warning = _a.warning, danger = _a.danger, rounded = _a.rounded, p = _a.p, s = _a.s, l = _a.l, i = _a.i, w = _a.w, d = _a.d, r = _a.r;
+    var children = _a.children, light = _a.light, primary = _a.primary, success = _a.success, link = _a.link, info = _a.info, warning = _a.warning, danger = _a.danger, rounded = _a.rounded, li = _a.li, p = _a.p, s = _a.s, l = _a.l, i = _a.i, w = _a.w, d = _a.d, r = _a.r;
     var classes = classNames((_b = {},
         _b[button] = true,
         _b[isPrimary] = primary || p,
@@ -13,6 +13,7 @@ var Button = function (_a) {
         _b[isWarning] = warning || w,
         _b[isDanger] = danger || d,
         _b[isRounded] = rounded || r,
+        _b[isLight] = light || li,
         _b));
     return (React.createElement("button", { className: classes }, children));
 };
@@ -25,6 +26,7 @@ Button.defaultProps = {
     warning: false,
     danger: false,
     rounded: false,
+    light: false,
     p: false,
     l: false,
     i: false,
@@ -32,6 +34,7 @@ Button.defaultProps = {
     w: false,
     d: false,
     r: false,
+    li: false,
 };
 export default Button;
 //# sourceMappingURL=Button.js.map

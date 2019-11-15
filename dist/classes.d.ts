@@ -5,4 +5,5 @@ export declare const isLink: string;
 export declare const isInfo: string;
 export declare const isWarning: string;
 export declare const isDanger: string;
+export declare const isLight: string;
 export declare const isRounded: string;

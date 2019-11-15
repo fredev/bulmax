@@ -7,6 +7,7 @@ interface ButtonProps {
     success?: boolean;
     warning?: boolean;
     danger?: boolean;
+    light?: boolean;
     p?: boolean;
     l?: boolean;
     i?: boolean;
@@ -14,6 +15,7 @@ interface ButtonProps {
     w?: boolean;
     d?: boolean;
     r?: boolean;
+    li?: boolean;
     rounded?: boolean;
 }
 declare const Button: React.FC<ButtonProps>;
