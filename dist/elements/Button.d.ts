@@ -21,6 +21,7 @@ interface ButtonProps {
     r?: boolean;
     li?: boolean;
     rounded?: boolean;
+    onClick?(event: React.MouseEvent<HTMLButtonElement>): void;
 }
 declare const Button: React.FC<ButtonProps>;
 export default Button;

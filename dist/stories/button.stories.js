@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../components/Button";
+import Button from "../elements/Button";
 export default { title: 'Elements/Button' };
 var style = {
     container: {

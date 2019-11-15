@@ -11,3 +11,6 @@ export declare const isSmall: string;
 export declare const isNormal: string;
 export declare const isMedium: string;
 export declare const isLarge: string;
+export declare const modal: string;
+export declare const modalBackground: string;
+export declare const modalContent: string;
