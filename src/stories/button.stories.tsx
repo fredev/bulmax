@@ -22,37 +22,89 @@ export const Colors = () => (
   <div style={style.container}>
     <div style={style.buttonContainer}>
       <h3 className="is-size-3 has-text-white">is-primary</h3>
-      <Button primary>Button</Button>
+      <Button primary>Primary</Button>
     </div>
 
     <div style={style.buttonContainer}>
       <h3 className="is-size-3 has-text-white">is-link</h3>
-      <Button link>Button</Button>
+      <Button link>Link</Button>
     </div>
 
     <div style={style.buttonContainer}>
       <h3 className="is-size-3 has-text-white">is-info</h3>
-      <Button info>Button</Button>
+      <Button info>Info</Button>
     </div>
 
     <div style={style.buttonContainer}>
       <h3 className="is-size-3 has-text-white">is-success</h3>
-      <Button success>Button</Button>
+      <Button success>Success</Button>
     </div>
 
     <div style={style.buttonContainer}>
       <h3 className="is-size-3 has-text-white">is-warning</h3>
-      <Button warning>Button</Button>
+      <Button warning>Warning</Button>
     </div>
 
     <div style={style.buttonContainer}>
       <h3 className="is-size-3 has-text-white">is-danger</h3>
-      <Button danger>Button</Button>
+      <Button danger>Danger</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-primary is-light</h3>
+      <Button primary light>Primary</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-link is-light</h3>
+      <Button link light>Link</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-info is-light</h3>
+      <Button info light>Info</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-success is-light</h3>
+      <Button success light>Success</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-warning is-light</h3>
+      <Button warning light>Warning</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-danger is-light</h3>
+      <Button danger light>Danger</Button>
     </div>
   </div>
 );
 
-export const Sizes = () => ('');
+export const Sizes = () => (
+  <div style={style.container}>
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-small</h3>
+      <Button small >Small</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-normal</h3>
+      <Button normal >Normal</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-medium</h3>
+      <Button medium >Medium</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-large</h3>
+      <Button large >Large</Button>
+    </div>
+  </div>
+);
 
 export const Rounded = () => (
   <div style={style.container}>

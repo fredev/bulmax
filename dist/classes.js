@@ -7,5 +7,11 @@ export var isLink = 'is-link';
 export var isInfo = 'is-info';
 export var isWarning = 'is-warning';
 export var isDanger = 'is-danger';
+export var isLight = 'is-light';
 export var isRounded = 'is-rounded';
+//Sizes
+export var isSmall = 'is-small';
+export var isNormal = 'is-normal';
+export var isMedium = 'is-medium';
+export var isLarge = 'is-large';
 //# sourceMappingURL=classes.js.map

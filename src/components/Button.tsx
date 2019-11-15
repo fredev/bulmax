@@ -1,5 +1,5 @@
 import React from 'react';
-import {button, isDanger, isInfo, isLink, isPrimary, isRounded, isSuccess, isWarning} from "../classes";
+import {button, isDanger, isInfo, isLink, isPrimary, isRounded, isSuccess, isWarning, isLight, isSmall, isNormal, isMedium, isLarge} from "../classes";
 import classNames from "classnames";
 
 interface ButtonProps {
@@ -10,6 +10,11 @@ interface ButtonProps {
   success?: boolean
   warning?: boolean
   danger?: boolean
+  light?: boolean
+  small?: boolean
+  normal?: boolean
+  medium?: boolean
+  large?: boolean
 
   p?: boolean // primary
   l?: boolean // link
@@ -18,6 +23,7 @@ interface ButtonProps {
   w?: boolean // warning
   d?: boolean // danger
   r?: boolean // rounded
+  li?: boolean // light
 
   rounded?: boolean
 }
@@ -26,13 +32,19 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = (
   {
     children,
+    light,
     primary,
     success,
     link,
     info,
     warning,
     danger,
+    small,
+    normal,
+    medium,
+    large,
     rounded,
+    li,
     p, s, l,
     i, w, d, r
   }
@@ -45,7 +57,12 @@ const Button: React.FC<ButtonProps> = (
     [isInfo]: info || i,
     [isWarning]: warning || w,
     [isDanger]: danger || d,
-    [isRounded]: rounded || r
+    [isRounded]: rounded || r,
+    [isLight]: light || li,
+    [isSmall]: small,
+    [isNormal]: normal,
+    [isMedium]: medium,
+    [isLarge]: large,
   });
 
   return (
@@ -62,6 +79,11 @@ Button.defaultProps = {
   warning: false,
   danger: false,
   rounded: false,
+  light: false,
+  small: false,
+  normal: false,
+  medium: false,
+  large: false,
   p: false,
   l: false,
   i: false,
@@ -69,6 +91,7 @@ Button.defaultProps = {
   w: false,
   d: false,
   r: false,
+  li: false,
 };
 
 export default Button;
