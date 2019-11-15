@@ -26,8 +26,8 @@ interface ButtonProps {
   li?: boolean // light
 
   rounded?: boolean
+  onClick?(event: React.MouseEvent<HTMLButtonElement>): void;
 }
-
 
 const Button: React.FC<ButtonProps> = (
   {
@@ -46,7 +46,8 @@ const Button: React.FC<ButtonProps> = (
     rounded,
     li,
     p, s, l,
-    i, w, d, r
+    i, w, d, r,
+    onClick,
   }
 ) => {
   const classes = classNames({
@@ -66,7 +67,7 @@ const Button: React.FC<ButtonProps> = (
   });
 
   return (
-      <button className={classes}>{children}</button>
+      <button className={classes} onClick={onClick}>{children}</button>
   )
 };
 

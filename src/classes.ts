@@ -11,8 +11,13 @@ export const isDanger: string = 'is-danger';
 export const isLight: string = 'is-light';
 export const isRounded: string = 'is-rounded';
 
-//Sizes
+// Sizes
 export const isSmall: string = 'is-small';
 export const isNormal: string = 'is-normal';
 export const isMedium: string = 'is-medium';
 export const isLarge: string = 'is-large';
+
+// Modal
+export const modal: string = 'modal';
+export const modalBackground: string = 'modal-background';
+export const modalContent: string = 'modal-content';
