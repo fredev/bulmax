@@ -82,7 +82,29 @@ export const Colors = () => (
   </div>
 );
 
-export const Sizes = () => ('');
+export const Sizes = () => (
+  <div style={style.container}>
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-small</h3>
+      <Button small >Small</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-normal</h3>
+      <Button normal >Normal</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-medium</h3>
+      <Button medium >Medium</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-large</h3>
+      <Button large >Large</Button>
+    </div>
+  </div>
+);
 
 export const Rounded = () => (
   <div style={style.container}>

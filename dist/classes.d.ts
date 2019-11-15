@@ -7,3 +7,7 @@ export declare const isWarning: string;
 export declare const isDanger: string;
 export declare const isLight: string;
 export declare const isRounded: string;
+export declare const isSmall: string;
+export declare const isNormal: string;
+export declare const isMedium: string;
+export declare const isLarge: string;

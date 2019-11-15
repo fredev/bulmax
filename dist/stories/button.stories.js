@@ -52,7 +52,19 @@ export var Colors = function () { return (React.createElement("div", { style: st
     React.createElement("div", { style: style.buttonContainer },
         React.createElement("h3", { className: "is-size-3 has-text-white" }, "is-danger is-light"),
         React.createElement(Button, { danger: true, light: true }, "Danger")))); };
-export var Sizes = function () { return (''); };
+export var Sizes = function () { return (React.createElement("div", { style: style.container },
+    React.createElement("div", { style: style.buttonContainer },
+        React.createElement("h3", { className: "is-size-3 has-text-white" }, "is-small"),
+        React.createElement(Button, { small: true }, "Small")),
+    React.createElement("div", { style: style.buttonContainer },
+        React.createElement("h3", { className: "is-size-3 has-text-white" }, "is-normal"),
+        React.createElement(Button, { normal: true }, "Normal")),
+    React.createElement("div", { style: style.buttonContainer },
+        React.createElement("h3", { className: "is-size-3 has-text-white" }, "is-medium"),
+        React.createElement(Button, { medium: true }, "Medium")),
+    React.createElement("div", { style: style.buttonContainer },
+        React.createElement("h3", { className: "is-size-3 has-text-white" }, "is-large"),
+        React.createElement(Button, { large: true }, "Large")))); };
 export var Rounded = function () { return (React.createElement("div", { style: style.container },
     React.createElement("div", { style: style.buttonContainer },
         React.createElement("h3", { className: "is-size-3 has-text-white" }, "is-primary"),

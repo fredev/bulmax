@@ -8,6 +8,10 @@ interface ButtonProps {
     warning?: boolean;
     danger?: boolean;
     light?: boolean;
+    small?: boolean;
+    normal?: boolean;
+    medium?: boolean;
+    large?: boolean;
     p?: boolean;
     l?: boolean;
     i?: boolean;
