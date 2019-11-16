@@ -172,4 +172,38 @@ export const Outlined = () => (
       <Button danger outlined>Button</Button>
     </div>
   </div>
-)
+);
+
+export const Inverted = () => (
+  <div style={style.container}>
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-inverted</h3>
+      <Button inverted>Button</Button>
+    </div>
+    
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">primary is-inverted</h3>
+      <Button primary inverted>Button</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">link is-inverted</h3>
+      <Button link inverted>Button</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">info is-inverted</h3>
+      <Button info inverted>Button</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">success is-inverted</h3>
+      <Button success inverted>Button</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">danger is-inverted</h3>
+      <Button danger inverted>Button</Button>
+    </div>
+  </div>
+);

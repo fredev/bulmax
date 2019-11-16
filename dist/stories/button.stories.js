@@ -103,4 +103,23 @@ export var Outlined = function () { return (React.createElement("div", { style: 
     React.createElement("div", { style: style.buttonContainer },
         React.createElement("h3", { className: "is-size-3 has-text-white" }, "danger is-outlined"),
         React.createElement(Button, { danger: true, outlined: true }, "Button")))); };
+export var Inverted = function () { return (React.createElement("div", { style: style.container },
+    React.createElement("div", { style: style.buttonContainer },
+        React.createElement("h3", { className: "is-size-3 has-text-white" }, "is-inverted"),
+        React.createElement(Button, { inverted: true }, "Button")),
+    React.createElement("div", { style: style.buttonContainer },
+        React.createElement("h3", { className: "is-size-3 has-text-white" }, "primary is-inverted"),
+        React.createElement(Button, { primary: true, inverted: true }, "Button")),
+    React.createElement("div", { style: style.buttonContainer },
+        React.createElement("h3", { className: "is-size-3 has-text-white" }, "link is-inverted"),
+        React.createElement(Button, { link: true, inverted: true }, "Button")),
+    React.createElement("div", { style: style.buttonContainer },
+        React.createElement("h3", { className: "is-size-3 has-text-white" }, "info is-inverted"),
+        React.createElement(Button, { info: true, inverted: true }, "Button")),
+    React.createElement("div", { style: style.buttonContainer },
+        React.createElement("h3", { className: "is-size-3 has-text-white" }, "success is-inverted"),
+        React.createElement(Button, { success: true, inverted: true }, "Button")),
+    React.createElement("div", { style: style.buttonContainer },
+        React.createElement("h3", { className: "is-size-3 has-text-white" }, "danger is-inverted"),
+        React.createElement(Button, { danger: true, inverted: true }, "Button")))); };
 //# sourceMappingURL=button.stories.js.map
