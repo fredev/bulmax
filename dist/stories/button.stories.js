@@ -84,4 +84,23 @@ export var Rounded = function () { return (React.createElement("div", { style: s
     React.createElement("div", { style: style.buttonContainer },
         React.createElement("h3", { className: "is-size-3 has-text-white" }, "is-danger"),
         React.createElement(Button, { danger: true, rounded: true }, "Button")))); };
+export var Outlined = function () { return (React.createElement("div", { style: style.container },
+    React.createElement("div", { style: style.buttonContainer },
+        React.createElement("h3", { className: "is-size-3 has-text-white" }, "is-outlined"),
+        React.createElement(Button, { outlined: true }, "Button")),
+    React.createElement("div", { style: style.buttonContainer },
+        React.createElement("h3", { className: "is-size-3 has-text-white" }, "primary is-outlined"),
+        React.createElement(Button, { primary: true, outlined: true }, "Button")),
+    React.createElement("div", { style: style.buttonContainer },
+        React.createElement("h3", { className: "is-size-3 has-text-white" }, "link is-outlined"),
+        React.createElement(Button, { link: true, outlined: true }, "Button")),
+    React.createElement("div", { style: style.buttonContainer },
+        React.createElement("h3", { className: "is-size-3 has-text-white" }, "info is-outlined"),
+        React.createElement(Button, { info: true, outlined: true }, "Button")),
+    React.createElement("div", { style: style.buttonContainer },
+        React.createElement("h3", { className: "is-size-3 has-text-white" }, "warning is-outlined"),
+        React.createElement(Button, { warning: true, outlined: true }, "Button")),
+    React.createElement("div", { style: style.buttonContainer },
+        React.createElement("h3", { className: "is-size-3 has-text-white" }, "danger is-outlined"),
+        React.createElement(Button, { danger: true, outlined: true }, "Button")))); };
 //# sourceMappingURL=button.stories.js.map

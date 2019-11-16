@@ -6,3 +6,4 @@ export default _default;
 export declare const Colors: () => JSX.Element;
 export declare const Sizes: () => JSX.Element;
 export declare const Rounded: () => JSX.Element;
+export declare const Outlined: () => JSX.Element;

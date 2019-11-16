@@ -17,6 +17,9 @@ export const isNormal: string = 'is-normal';
 export const isMedium: string = 'is-medium';
 export const isLarge: string = 'is-large';
 
+// Styles
+export const isOutlined: string = 'is-outlined';
+
 // Modal
 export const modal: string = 'modal';
 export const modalBackground: string = 'modal-background';

@@ -139,3 +139,37 @@ export const Rounded = () => (
     </div>
   </div>
 );
+
+export const Outlined = () => (
+  <div style={style.container}>
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-outlined</h3>
+      <Button outlined>Button</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">primary is-outlined</h3>
+      <Button primary outlined>Button</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">link is-outlined</h3>
+      <Button link outlined>Button</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">info is-outlined</h3>
+      <Button info outlined>Button</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">warning is-outlined</h3>
+      <Button warning outlined>Button</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">danger is-outlined</h3>
+      <Button danger outlined>Button</Button>
+    </div>
+  </div>
+)

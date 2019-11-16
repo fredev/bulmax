@@ -14,6 +14,8 @@ export var isSmall = 'is-small';
 export var isNormal = 'is-normal';
 export var isMedium = 'is-medium';
 export var isLarge = 'is-large';
+// Styles
+export var isOutlined = 'is-outlined';
 // Modal
 export var modal = 'modal';
 export var modalBackground = 'modal-background';
