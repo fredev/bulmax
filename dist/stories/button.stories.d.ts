@@ -8,3 +8,4 @@ export declare const Sizes: () => JSX.Element;
 export declare const Rounded: () => JSX.Element;
 export declare const Outlined: () => JSX.Element;
 export declare const Inverted: () => JSX.Element;
+export declare const Loading: () => JSX.Element;

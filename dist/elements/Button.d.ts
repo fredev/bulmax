@@ -14,6 +14,7 @@ interface ButtonProps {
     large?: boolean;
     outlined?: boolean;
     inverted?: boolean;
+    loading?: boolean;
     p?: boolean;
     l?: boolean;
     i?: boolean;

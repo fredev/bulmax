@@ -13,6 +13,7 @@ export declare const isMedium: string;
 export declare const isLarge: string;
 export declare const isOutlined: string;
 export declare const isInverted: string;
+export declare const isLoading: string;
 export declare const modal: string;
 export declare const modalBackground: string;
 export declare const modalContent: string;
