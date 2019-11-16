@@ -19,6 +19,7 @@ export const isLarge: string = 'is-large';
 
 // Styles
 export const isOutlined: string = 'is-outlined';
+export const isInverted: string = 'is-inverted';
 
 // Modal
 export const modal: string = 'modal';

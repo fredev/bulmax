@@ -13,6 +13,7 @@ interface ButtonProps {
     medium?: boolean;
     large?: boolean;
     outlined?: boolean;
+    inverted?: boolean;
     p?: boolean;
     l?: boolean;
     i?: boolean;

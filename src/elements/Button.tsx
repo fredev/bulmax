@@ -1,5 +1,22 @@
 import React from 'react';
-import {button, isDanger, isInfo, isLink, isPrimary, isRounded, isSuccess, isWarning, isLight, isSmall, isNormal, isMedium, isLarge, isOutlined} from "../classes";
+import {
+  button,
+  isDanger, 
+  isInfo, 
+  isLink, 
+  isPrimary, 
+  isRounded, 
+  isSuccess, 
+  isWarning, 
+  isLight, 
+  isSmall, 
+  isNormal, 
+  isMedium, 
+  isLarge, 
+  isOutlined, 
+  isInverted
+}
+  from "../classes";
 import classNames from "classnames";
 
 interface ButtonProps {
@@ -16,6 +33,7 @@ interface ButtonProps {
   medium?: boolean
   large?: boolean
   outlined?: boolean
+  inverted?: boolean
 
   p?: boolean // primary
   l?: boolean // link
@@ -46,6 +64,7 @@ const Button: React.FC<ButtonProps> = (
     large,
     rounded,
     outlined,
+    inverted,
     li,
     p, s, l,
     i, w, d, r,
@@ -67,6 +86,7 @@ const Button: React.FC<ButtonProps> = (
     [isMedium]: medium,
     [isLarge]: large,
     [isOutlined]: outlined,
+    [isInverted]: inverted,
   });
 
   return (
