@@ -12,6 +12,7 @@ interface ButtonProps {
     normal?: boolean;
     medium?: boolean;
     large?: boolean;
+    outlined?: boolean;
     p?: boolean;
     l?: boolean;
     i?: boolean;
