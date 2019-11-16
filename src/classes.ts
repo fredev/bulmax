@@ -21,6 +21,9 @@ export const isLarge: string = 'is-large';
 export const isOutlined: string = 'is-outlined';
 export const isInverted: string = 'is-inverted';
 
+// States
+export const isLoading: string = 'is-loading';
+
 // Modal
 export const modal: string = 'modal';
 export const modalBackground: string = 'modal-background';

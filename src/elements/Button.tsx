@@ -14,7 +14,8 @@ import {
   isMedium, 
   isLarge, 
   isOutlined, 
-  isInverted
+  isInverted,
+  isLoading,
 }
   from "../classes";
 import classNames from "classnames";
@@ -34,6 +35,7 @@ interface ButtonProps {
   large?: boolean
   outlined?: boolean
   inverted?: boolean
+  loading?: boolean
 
   p?: boolean // primary
   l?: boolean // link
@@ -65,6 +67,7 @@ const Button: React.FC<ButtonProps> = (
     rounded,
     outlined,
     inverted,
+    loading,
     li,
     p, s, l,
     i, w, d, r,
@@ -87,6 +90,7 @@ const Button: React.FC<ButtonProps> = (
     [isLarge]: large,
     [isOutlined]: outlined,
     [isInverted]: inverted,
+    [isLoading]: loading,
   });
 
   return (

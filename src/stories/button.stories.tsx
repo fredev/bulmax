@@ -180,7 +180,7 @@ export const Inverted = () => (
       <h3 className="is-size-3 has-text-white">is-inverted</h3>
       <Button inverted>Button</Button>
     </div>
-    
+
     <div style={style.buttonContainer}>
       <h3 className="is-size-3 has-text-white">primary is-inverted</h3>
       <Button primary inverted>Button</Button>
@@ -207,3 +207,42 @@ export const Inverted = () => (
     </div>
   </div>
 );
+
+export const Loading = () => (
+  <div style={style.container}>
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">is-loading</h3>
+      <Button loading>Button</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">primary is-loading</h3>
+      <Button primary loading>Button</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">link is-loading</h3>
+      <Button link loading>Button</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">info is-loading</h3>
+      <Button info loading>Button</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">success is-loading</h3>
+      <Button success loading>Button</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">warning is-loading</h3>
+      <Button warning loading>Button</Button>
+    </div>
+
+    <div style={style.buttonContainer}>
+      <h3 className="is-size-3 has-text-white">danger is-loading</h3>
+      <Button danger loading>Button</Button>
+    </div>
+  </div>
+)

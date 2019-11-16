@@ -17,6 +17,8 @@ export var isLarge = 'is-large';
 // Styles
 export var isOutlined = 'is-outlined';
 export var isInverted = 'is-inverted';
+// States
+export var isLoading = 'is-loading';
 // Modal
 export var modal = 'modal';
 export var modalBackground = 'modal-background';
