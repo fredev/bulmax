@@ -28,3 +28,8 @@ export const isLoading: string = 'is-loading';
 export const modal: string = 'modal';
 export const modalBackground: string = 'modal-background';
 export const modalContent: string = 'modal-content';
+export const isActive: string = 'is-active';
+
+// Breadcrumb
+export const breadcrumb: string = 'breadcrumb';
+export const isCentered: string = 'is-centered';
