@@ -23,4 +23,8 @@ export var isLoading = 'is-loading';
 export var modal = 'modal';
 export var modalBackground = 'modal-background';
 export var modalContent = 'modal-content';
+export var isActive = 'is-active';
+// Breadcrumb
+export var breadcrumb = 'breadcrumb';
+export var isCentered = 'is-centered';
 //# sourceMappingURL=classes.js.map

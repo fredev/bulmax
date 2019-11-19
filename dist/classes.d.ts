@@ -17,3 +17,6 @@ export declare const isLoading: string;
 export declare const modal: string;
 export declare const modalBackground: string;
 export declare const modalContent: string;
+export declare const isActive: string;
+export declare const breadcrumb: string;
+export declare const isCentered: string;

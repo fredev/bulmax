@@ -33,7 +33,9 @@ export var BaseModal = function () {
             React.createElement(Button, { primary: true, onClick: onModalOpenClick }, "Open Modal"),
             React.createElement(Modal, { open: open },
                 React.createElement(ModalBackground, null),
-                React.createElement(ModalContent, null, "This is an example modal"),
+                React.createElement(ModalContent, null,
+                    React.createElement("div", { className: "box" },
+                        React.createElement("p", null, " Ciao "))),
                 React.createElement(Button, { success: true, onClick: onModalCloseClick }, "Close")))));
 };
 //# sourceMappingURL=modal.stories.js.map
