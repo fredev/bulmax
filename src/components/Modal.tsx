@@ -1,5 +1,5 @@
 import React, {ReactChild, ReactElement} from "react";
-import {modal, modalBackground, modalContent} from "../classes";
+import { isActive, modalBackground, modalContent} from "../classes";
 
 interface ModalContentProps {
   children: ReactChild
@@ -22,9 +22,9 @@ export const ModalBackground: React.FC = () => (
 
 export const Modal: React.FC<ModalProps> = ({ children, open }) => {
   console.log(open);
-  return open
+  return open === true
     ? (
-      <div className={modal}>
+      <div className={isActive}>
         { children }
       </div>
     )

@@ -42,7 +42,9 @@ export const BaseModal = () => {
         <Modal open={open}>
           <ModalBackground />
           <ModalContent>
-            This is an example modal
+            <div className="box">
+              <p> Ciao </p>
+            </div>
           </ModalContent>
           <Button success onClick={onModalCloseClick}>Close</Button>
         </Modal>
