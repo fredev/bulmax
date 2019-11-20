@@ -23,8 +23,17 @@ export var isLoading = 'is-loading';
 export var modal = 'modal';
 export var modalBackground = 'modal-background';
 export var modalContent = 'modal-content';
+export var modalClose = 'modal-close';
+export var modalCard = 'modal-card';
 export var isActive = 'is-active';
+export var isRight = 'is-right';
+export var hasArrowSeparator = 'has-arrow-separator';
+export var hasBulletSeparator = 'has-bullet-separator';
+export var hasDotSeparator = 'has-dot-separator';
+export var hasSucceedsSeparator = 'has-succeeds-separator';
 // Breadcrumb
 export var breadcrumb = 'breadcrumb';
 export var isCentered = 'is-centered';
+// Box
+export var box = 'box';
 //# sourceMappingURL=classes.js.map

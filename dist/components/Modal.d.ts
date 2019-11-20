@@ -1,12 +1,7 @@
-import React, { ReactChild, ReactElement } from "react";
-interface ModalContentProps {
-    children: ReactChild;
-}
+import React, { ReactElement } from "react";
 interface ModalProps {
     children: ReactElement | ReactElement[];
-    open: boolean;
+    active: boolean;
 }
-export declare const ModalContent: React.FC<ModalContentProps>;
-export declare const ModalBackground: React.FC;
-export declare const Modal: React.FC<ModalProps>;
-export {};
+declare const Modal: React.FC<ModalProps>;
+export default Modal;

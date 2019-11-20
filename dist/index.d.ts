@@ -1,2 +1,4 @@
 export { default as Button } from './elements/Button';
-export { Modal, ModalBackground, ModalContent } from './components/Modal';
+export { default as Modal } from "./components/Modal";
+export { default as ModalBackground } from './components/ModalBackground';
+export { default as ModalContent } from "./components/ModalContent";
