@@ -1,248 +1,234 @@
 import React from "react";
 import Button from "../elements/Button";
+import { StoryContainer, StoryButtonContainer } from './utils';
 
 export default { title: 'Elements/Button' };
 
-const style = {
-  container: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    alignItems: 'center',
-    justifyContent: 'space-around',
-  } as React.CSSProperties,
-  buttonContainer: {
-    width: '33.333%',
-    padding: '20px',
-    display: 'flex',
-    flexDirection: 'column'
-  }  as React.CSSProperties,
-};
-
 export const Colors = () => (
-  <div style={style.container}>
-    <div style={style.buttonContainer}>
+  <StoryContainer>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-primary</h3>
       <Button primary>Primary</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-link</h3>
       <Button link>Link</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-info</h3>
       <Button info>Info</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-success</h3>
       <Button success>Success</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-warning</h3>
       <Button warning>Warning</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-danger</h3>
       <Button danger>Danger</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-primary is-light</h3>
       <Button primary light>Primary</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-link is-light</h3>
       <Button link light>Link</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-info is-light</h3>
       <Button info light>Info</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-success is-light</h3>
       <Button success light>Success</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-warning is-light</h3>
       <Button warning light>Warning</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-danger is-light</h3>
       <Button danger light>Danger</Button>
-    </div>
-  </div>
+    </StoryButtonContainer>
+  </StoryContainer>
 );
 
 export const Sizes = () => (
-  <div style={style.container}>
-    <div style={style.buttonContainer}>
+  <StoryContainer>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-small</h3>
       <Button small >Small</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-normal</h3>
       <Button normal >Normal</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-medium</h3>
       <Button medium >Medium</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-large</h3>
       <Button large >Large</Button>
-    </div>
-  </div>
+    </StoryButtonContainer>
+  </StoryContainer>
 );
 
 export const Rounded = () => (
-  <div style={style.container}>
-    <div style={style.buttonContainer}>
+  <StoryContainer>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-primary</h3>
       <Button primary rounded>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-link</h3>
       <Button link rounded>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-info</h3>
       <Button info rounded>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-success</h3>
       <Button success rounded>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-warning</h3>
       <Button warning rounded>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-danger</h3>
       <Button danger rounded>Button</Button>
-    </div>
-  </div>
+    </StoryButtonContainer>
+  </StoryContainer>
 );
 
 export const Outlined = () => (
-  <div style={style.container}>
-    <div style={style.buttonContainer}>
+  <StoryContainer>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-outlined</h3>
       <Button outlined>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">primary is-outlined</h3>
       <Button primary outlined>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">link is-outlined</h3>
       <Button link outlined>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">info is-outlined</h3>
       <Button info outlined>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">warning is-outlined</h3>
       <Button warning outlined>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">danger is-outlined</h3>
       <Button danger outlined>Button</Button>
-    </div>
-  </div>
+    </StoryButtonContainer>
+  </StoryContainer>
 );
 
 export const Inverted = () => (
-  <div style={style.container}>
-    <div style={style.buttonContainer}>
+  <StoryContainer>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-inverted</h3>
       <Button inverted>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">primary is-inverted</h3>
       <Button primary inverted>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">link is-inverted</h3>
       <Button link inverted>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">info is-inverted</h3>
       <Button info inverted>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">success is-inverted</h3>
       <Button success inverted>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">danger is-inverted</h3>
       <Button danger inverted>Button</Button>
-    </div>
-  </div>
+    </StoryButtonContainer>
+  </StoryContainer>
 );
 
 export const Loading = () => (
-  <div style={style.container}>
-    <div style={style.buttonContainer}>
+  <StoryContainer>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">is-loading</h3>
       <Button loading>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">primary is-loading</h3>
       <Button primary loading>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">link is-loading</h3>
       <Button link loading>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">info is-loading</h3>
       <Button info loading>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">success is-loading</h3>
       <Button success loading>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">warning is-loading</h3>
       <Button warning loading>Button</Button>
-    </div>
+    </StoryButtonContainer>
 
-    <div style={style.buttonContainer}>
+    <StoryButtonContainer>
       <h3 className="is-size-3 has-text-white">danger is-loading</h3>
       <Button danger loading>Button</Button>
-    </div>
-  </div>
+    </StoryButtonContainer>
+  </StoryContainer>
 )

@@ -30,7 +30,11 @@ export const modalBackground: string = 'modal-background';
 export const modalContent: string = 'modal-content';
 export const modalClose: string = 'modal-close';
 export const isActive: string = 'is-active';
-
+export const isRight: string = 'is-right';
+export const hasArrowSeparator: string = 'has-arrow-separator';
+export const hasBulletSeparator: string = 'has-bullet-separator';
+export const hasDotSeparator: string = 'has-dot-separator';
+export const hasSucceedsSeparator: string = 'has-succeeds-separator';
 // Breadcrumb
 export const breadcrumb: string = 'breadcrumb';
 export const isCentered: string = 'is-centered';

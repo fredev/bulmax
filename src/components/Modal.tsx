@@ -5,6 +5,8 @@ import {
   modalContent,
   modalClose,
   isLarge,
+  isMedium,
+  isSmall,
   modal,
 } from "../classes";
 import classNames from "classnames";
@@ -20,6 +22,8 @@ interface ModalProps {
 
 interface ModalCloseProps {
   large?: boolean
+  medium?: boolean
+  small?: boolean
   onClose(): void
 }
 
@@ -33,10 +37,12 @@ export const ModalBackground: React.FC = () => (
   <div className={modalBackground} />
 );
 
-export const ModalClose: React.FC<ModalCloseProps> = ({ large, onClose }) => {
+export const ModalClose: React.FC<ModalCloseProps> = ({ large, medium, small, onClose }) => {
   const classes = classNames({
     [modalClose]: true,
     [isLarge]: large,
+    [isMedium]: medium,
+    [isSmall]: small,
   });
 
   return (
