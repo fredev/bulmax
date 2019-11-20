@@ -1,13 +1,26 @@
-import React, {ReactChild, ReactElement} from "react";
-import { isActive, modalBackground, modalContent} from "../classes";
+import React, { ReactElement } from "react";
+import {
+  isActive,
+  modalBackground,
+  modalContent,
+  modalClose,
+  isLarge,
+  modal,
+} from "../classes";
+import classNames from "classnames";
 
 interface ModalContentProps {
-  children: ReactChild
+  children: ReactElement | ReactElement[]
 }
 
 interface ModalProps {
   children: ReactElement | ReactElement[]
-  open: boolean
+  active: boolean
+}
+
+interface ModalCloseProps {
+  large?: boolean
+  onClose(): void
 }
 
 export const ModalContent: React.FC<ModalContentProps> = ({ children }) => (
@@ -20,11 +33,26 @@ export const ModalBackground: React.FC = () => (
   <div className={modalBackground} />
 );
 
-export const Modal: React.FC<ModalProps> = ({ children, open }) => {
-  console.log(open);
-  return open === true
+export const ModalClose: React.FC<ModalCloseProps> = ({ large, onClose }) => {
+  const classes = classNames({
+    [modalClose]: true,
+    [isLarge]: large,
+  });
+
+  return (
+    <button className={classes} aria-label="close" onClick={onClose} />
+  )
+};
+
+export const Modal: React.FC<ModalProps> = ({ children, active }) => {
+  const classes = classNames({
+    [modal]: true,
+    [isActive]: active,
+  });
+
+  return open
     ? (
-      <div className={isActive}>
+      <div className={classes}>
         { children }
       </div>
     )
