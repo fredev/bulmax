@@ -1,6 +1,10 @@
 import React from "react";
 import Button from "../elements/Button";
-import { Modal, ModalClose, ModalBackground, ModalContent } from "../components/Modal";
+import Modal from "../components/Modal";
+import ModalContent from "../components/ModalContent";
+import ModalClose from "../components/ModalClose";
+import ModalBackground from "../components/ModalBackground";
+import Box from "../components/Box";
 import { StoryContainer } from "./utils";
 
 export default { title: 'Components/Modal' };
@@ -27,7 +31,7 @@ export const BaseModal = () => {
       <Modal active={active}>
         <ModalBackground />
         <ModalContent>
-          <div className="box">
+          <Box>
             <article className="media">
               <div className="media-left">
                 <figure className="image is-64x64">
@@ -67,7 +71,7 @@ export const BaseModal = () => {
                 </nav>
               </div>
             </article>
-          </div>
+          </Box>
         </ModalContent>
         <ModalClose large onClose={onModalCloseClick}>Close</ModalClose>
       </Modal>

@@ -29,6 +29,7 @@ export const modal: string = 'modal';
 export const modalBackground: string = 'modal-background';
 export const modalContent: string = 'modal-content';
 export const modalClose: string = 'modal-close';
+export const modalCard: string = 'modal-card';
 export const isActive: string = 'is-active';
 export const isRight: string = 'is-right';
 export const hasArrowSeparator: string = 'has-arrow-separator';
