@@ -35,6 +35,10 @@ export const hasArrowSeparator: string = 'has-arrow-separator';
 export const hasBulletSeparator: string = 'has-bullet-separator';
 export const hasDotSeparator: string = 'has-dot-separator';
 export const hasSucceedsSeparator: string = 'has-succeeds-separator';
+
 // Breadcrumb
 export const breadcrumb: string = 'breadcrumb';
 export const isCentered: string = 'is-centered';
+
+// Box
+export const box: string = 'box';
