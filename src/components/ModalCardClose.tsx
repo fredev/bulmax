@@ -1,8 +1,12 @@
 import React from "react";
 import { isDelete } from "../classes";
 
-const ModalCardClose: React.FC = () => (
-  <button className={isDelete} aria-label="close" />
+interface ModalCardCloseProps {
+  onClose(): void
+}
+
+const ModalCardClose: React.FC<ModalCardCloseProps> = ({ onClose }) => (
+  <button className={isDelete} aria-label="close" onClick={onClose} />
 );
 
 export default ModalCardClose;
