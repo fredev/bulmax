@@ -38,6 +38,8 @@ export const hasArrowSeparator: string = 'has-arrow-separator';
 export const hasBulletSeparator: string = 'has-bullet-separator';
 export const hasDotSeparator: string = 'has-dot-separator';
 export const hasSucceedsSeparator: string = 'has-succeeds-separator';
+export const isClipped: string = 'is-clipped';
+export const isDelete: string = 'delete'; // cannot define delete, renamed as isDelete
 
 // States
 export const isLoading: string = 'is-loading';
@@ -46,6 +48,10 @@ export const isLoading: string = 'is-loading';
 export const modal: string = 'modal';
 export const modalBackground: string = 'modal-background';
 export const modalCard: string = 'modal-card';
+export const modalCardHead: string = 'modal-card-head';
+export const modalCardBody: string = 'modal-card-body';
+export const modalCardTitle: string = 'modal-card-title';
+export const modalCardFoot: string = 'modal-card-foot';
 export const modalContent: string = 'modal-content';
 export const modalClose: string = 'modal-close';
 
