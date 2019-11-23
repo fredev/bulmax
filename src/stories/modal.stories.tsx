@@ -4,7 +4,7 @@ import Modal from "../components/Modal";
 import ModalContent from "../components/ModalContent";
 import ModalClose from "../components/ModalClose";
 import ModalBackground from "../components/ModalBackground";
-import Box from "../components/Box";
+import Box from "../elements/Box";
 import { StoryContainer } from "./utils";
 
 export default { title: 'Components/Modal' };

@@ -3,7 +3,7 @@ import { modalCard } from "../classes";
 
 interface ModalCardProps {
   children: ReactElement | ReactElement[]
-};
+}
 
 const ModalCard: React.FC<ModalCardProps> = ({ children }) => (
   <div className={modalCard}>
