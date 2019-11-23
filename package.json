@@ -1,6 +1,6 @@
 {
   "name": "@bulmax/bulmax",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "Bulma react components",
   "main": "dist/index.js",
   "files": [
