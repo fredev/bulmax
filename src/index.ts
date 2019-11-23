@@ -14,6 +14,11 @@ export { default as CardFooter } from './components/CardFooter';
 export { default as Modal } from "./components/Modal";
 export { default as ModalBackground } from './components/ModalBackground';
 export { default as ModalCard } from './components/ModalCard';
+export { default as ModalCardBody } from './components/ModalCardBody';
+export { default as ModalCardClose } from './components/ModalCardClose';
+export { default as ModalCardFoot } from './components/ModalCardFoot';
+export { default as ModalCardHead } from './components/ModalCardHead';
+export { default as ModalCardTitle } from './components/ModalCardTitle';
 export { default as ModalClose } from './components/ModalClose';
 export { default as ModalContent } from "./components/ModalContent";
 
