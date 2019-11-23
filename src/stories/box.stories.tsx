@@ -1,6 +1,6 @@
 import React from 'react';
 import { StoryContainer } from './utils';
-import Box from '../components/Box';
+import Box from '../elements/Box';
 
 export default { title: 'Elements/Box' };
 

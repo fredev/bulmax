@@ -17,12 +17,18 @@ import classNames from "classnames";
 interface BreadcrumbProps {
   children: ReactElement
   breadcrumb: boolean
+
+  // position
   centered?: boolean
   right?: boolean
-  arrowseparator?: boolean
-  bulletseparator?: boolean
-  dotseparator?: boolean
-  succeedseparator?: boolean
+
+  // separators
+  arrow?: boolean
+  bullet?: boolean
+  dot?: boolean
+  succeed?: boolean
+
+  // sizes
   small?: boolean;
   medium?: boolean
   large?: boolean
@@ -34,10 +40,10 @@ const Breadcrumb: React.FC<BreadcrumbProps> = (
     children,
     centered,
     right,
-    arrowseparator,
-    bulletseparator,
-    dotseparator,
-    succeedseparator,
+    arrow,
+    bullet,
+    dot,
+    succeed,
     small,
     medium,
     large
@@ -47,10 +53,10 @@ const Breadcrumb: React.FC<BreadcrumbProps> = (
     [breadcrumb]: true,
     [isCentered]: centered,
     [isRight]: right,
-    [hasArrowSeparator]: arrowseparator,
-    [hasBulletSeparator]: bulletseparator,
-    [hasDotSeparator]: dotseparator,
-    [hasSucceedsSeparator]: succeedseparator,
+    [hasArrowSeparator]: arrow,
+    [hasBulletSeparator]: bullet,
+    [hasDotSeparator]: dot,
+    [hasSucceedsSeparator]: succeed,
     [isSmall]: small,
     [isMedium]: medium,
     [isLarge]: large
@@ -65,10 +71,10 @@ Breadcrumb.defaultProps = {
   breadcrumb: true,
   centered: false,
   right: false,
-  arrowseparator: false,
-  bulletseparator: false,
-  dotseparator: false,
-  succeedseparator: false,
+  arrow: false,
+  bullet: false,
+  dot: false,
+  succeed: false,
   small: false,
   medium: false,
   large: false
