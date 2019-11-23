@@ -33,14 +33,20 @@ export var hasArrowSeparator = 'has-arrow-separator';
 export var hasBulletSeparator = 'has-bullet-separator';
 export var hasDotSeparator = 'has-dot-separator';
 export var hasSucceedsSeparator = 'has-succeeds-separator';
+export var isClipped = 'is-clipped';
+export var isDelete = 'delete'; // cannot define delete, renamed as isDelete
 // States
 export var isLoading = 'is-loading';
 // Modal
 export var modal = 'modal';
 export var modalBackground = 'modal-background';
+export var modalCard = 'modal-card';
+export var modalCardHead = 'modal-card-head';
+export var modalCardBody = 'modal-card-body';
+export var modalCardTitle = 'modal-card-title';
+export var modalCardFoot = 'modal-card-foot';
 export var modalContent = 'modal-content';
 export var modalClose = 'modal-close';
-export var modalCard = 'modal-card';
 // Breadcrumb
 export var breadcrumb = 'breadcrumb';
 // Box

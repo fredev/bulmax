@@ -4,10 +4,10 @@ interface BreadcrumbProps {
     breadcrumb: boolean;
     centered?: boolean;
     right?: boolean;
-    arrowseparator?: boolean;
-    bulletseparator?: boolean;
-    dotseparator?: boolean;
-    succeedseparator?: boolean;
+    arrow?: boolean;
+    bullet?: boolean;
+    dot?: boolean;
+    succeed?: boolean;
     small?: boolean;
     medium?: boolean;
     large?: boolean;
