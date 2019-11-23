@@ -1,3 +1,6 @@
 import React from "react";
-declare const ModalCardClose: React.FC;
+interface ModalCardCloseProps {
+    onClose(): void;
+}
+declare const ModalCardClose: React.FC<ModalCardCloseProps>;
 export default ModalCardClose;
