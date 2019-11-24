@@ -18,3 +18,4 @@ export { default as ModalClose } from './components/ModalClose';
 export { default as ModalContent } from "./components/ModalContent";
 export { default as Box } from './elements/Box';
 export { default as Button } from './elements/Button';
+export { default as Buttons } from './elements/Buttons';

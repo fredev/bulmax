@@ -23,4 +23,5 @@ export { default as ModalContent } from "./components/ModalContent";
 export { default as Box } from './elements/Box';
 // Button element
 export { default as Button } from './elements/Button';
+export { default as Buttons } from './elements/Buttons';
 //# sourceMappingURL=index.js.map
