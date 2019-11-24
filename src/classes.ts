@@ -1,6 +1,9 @@
 // Button
 export const button: string = 'button';
 
+// Buttons
+export const buttons: string = 'buttons';
+
 // Card
 export const card: string = 'card';
 export const cardImage: string = 'card-image';
@@ -22,9 +25,12 @@ export const isRounded: string = 'is-rounded';
 
 // Sizes
 export const isSmall: string = 'is-small';
+export const areSmall: string = 'are-small';
 export const isNormal: string = 'is-normal';
 export const isMedium: string = 'is-medium';
+export const areMedium: string = 'are-medium';
 export const isLarge: string = 'is-large';
+export const areLarge: string = 'are-large';
 
 // Styles
 export const isCentered: string = 'is-centered';
@@ -34,6 +40,7 @@ export const isActive: string = 'is-active';
 export const isRight: string = 'is-right';
 
 // Modifiers
+export const hasAddons: string = 'has-addons';
 export const hasArrowSeparator: string = 'has-arrow-separator';
 export const hasBulletSeparator: string = 'has-bullet-separator';
 export const hasDotSeparator: string = 'has-dot-separator';
