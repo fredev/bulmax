@@ -27,3 +27,4 @@ export { default as Box } from './elements/Box';
 
 // Button element
 export { default as Button } from './elements/Button';
+export { default as Buttons } from './elements/Buttons';
