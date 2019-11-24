@@ -4,12 +4,12 @@ import {areLarge, areMedium, areSmall, buttons, hasAddons, isCentered, isRight} 
 
 interface ButtonsProps {
   children: ReactElement | ReactElement[]
-  small: boolean
-  medium: boolean
-  large: boolean
-  addons: boolean
-  centered: boolean
-  right: boolean
+  small?: boolean
+  medium?: boolean
+  large?: boolean
+  addons?: boolean
+  centered?: boolean
+  right?: boolean
 }
 
 const Buttons: React.FC<ButtonsProps> = (
