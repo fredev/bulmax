@@ -3,7 +3,7 @@ import { button, isDanger, isInfo, isLink, isPrimary, isRounded, isSuccess, isWa
 import classNames from "classnames";
 var Button = function (_a) {
     var _b;
-    var children = _a.children, light = _a.light, primary = _a.primary, success = _a.success, link = _a.link, info = _a.info, warning = _a.warning, danger = _a.danger, small = _a.small, normal = _a.normal, medium = _a.medium, large = _a.large, rounded = _a.rounded, outlined = _a.outlined, inverted = _a.inverted, loading = _a.loading, li = _a.li, p = _a.p, s = _a.s, l = _a.l, i = _a.i, w = _a.w, d = _a.d, r = _a.r, onClick = _a.onClick;
+    var children = _a.children, submit = _a.submit, light = _a.light, primary = _a.primary, success = _a.success, link = _a.link, info = _a.info, warning = _a.warning, danger = _a.danger, small = _a.small, normal = _a.normal, medium = _a.medium, large = _a.large, rounded = _a.rounded, outlined = _a.outlined, inverted = _a.inverted, loading = _a.loading, li = _a.li, p = _a.p, s = _a.s, l = _a.l, i = _a.i, w = _a.w, d = _a.d, r = _a.r, onClick = _a.onClick;
     var classes = classNames((_b = {},
         _b[button] = true,
         _b[isPrimary] = primary || p,
@@ -22,10 +22,14 @@ var Button = function (_a) {
         _b[isInverted] = inverted,
         _b[isLoading] = loading,
         _b));
+    if (submit) {
+        return (React.createElement("input", { className: "button", type: "submit", value: children }));
+    }
     return (React.createElement("button", { className: classes, onClick: onClick }, children));
 };
 Button.defaultProps = {
     children: 'Button',
+    submit: false,
     primary: false,
     success: false,
     link: false,

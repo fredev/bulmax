@@ -1,6 +1,7 @@
 import React from 'react';
 interface ButtonProps {
     children: string;
+    submit?: boolean;
     primary?: boolean;
     link?: boolean;
     info?: boolean;
