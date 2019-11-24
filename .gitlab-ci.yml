@@ -4,25 +4,16 @@
 image: node:latest
 
 stages:
-  - build
   - publish
 
 before_script:
   - npm install
 
-build:
-  stage: build
-  only:
-    - master
-  script:
-    - npm run build
-
 publish:
   stage: publish
   only:
-    - master
+    - pre
   script:
-    - npm version
-    - git push --follow-tags
+    - npm run build
     - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
     - npm publish
