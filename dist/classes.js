@@ -1,5 +1,7 @@
 // Button
 export var button = 'button';
+// Buttons
+export var buttons = 'buttons';
 // Card
 export var card = 'card';
 export var cardImage = 'card-image';
@@ -19,9 +21,12 @@ export var isLight = 'is-light';
 export var isRounded = 'is-rounded';
 // Sizes
 export var isSmall = 'is-small';
+export var areSmall = 'are-small';
 export var isNormal = 'is-normal';
 export var isMedium = 'is-medium';
+export var areMedium = 'are-medium';
 export var isLarge = 'is-large';
+export var areLarge = 'are-large';
 // Styles
 export var isCentered = 'is-centered';
 export var isOutlined = 'is-outlined';
@@ -29,6 +34,7 @@ export var isInverted = 'is-inverted';
 export var isActive = 'is-active';
 export var isRight = 'is-right';
 // Modifiers
+export var hasAddons = 'has-addons';
 export var hasArrowSeparator = 'has-arrow-separator';
 export var hasBulletSeparator = 'has-bullet-separator';
 export var hasDotSeparator = 'has-dot-separator';
