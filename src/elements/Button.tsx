@@ -22,6 +22,7 @@ import classNames from "classnames";
 
 interface ButtonProps {
   children: string
+  submit?: boolean
   primary?: boolean
   link?: boolean
   info?: boolean
@@ -53,6 +54,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = (
   {
     children,
+    submit,
     light,
     primary,
     success,
@@ -93,6 +95,12 @@ const Button: React.FC<ButtonProps> = (
     [isLoading]: loading,
   });
 
+  if (submit) {
+    return (
+      <input className="button" type="submit" value={children} />
+    )
+  }
+
   return (
       <button className={classes} onClick={onClick}>{children}</button>
   )
@@ -100,6 +108,7 @@ const Button: React.FC<ButtonProps> = (
 
 Button.defaultProps = {
   children: 'Button',
+  submit: false,
   primary: false,
   success: false,
   link: false,
