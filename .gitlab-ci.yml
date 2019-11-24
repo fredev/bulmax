@@ -1,0 +1,28 @@
+# This file is a template, and might need editing before it works on your project.
+# Official framework image. Look for the different tagged releases at:
+# https://hub.docker.com/r/library/node/tags/
+image: node:latest
+
+stages:
+  - build
+  - publish
+
+before_script:
+  - npm install
+
+build:
+  stage: build
+  only:
+    - master
+  script:
+    - npm run build
+
+publish:
+  stage: publish
+  only:
+    - master
+  script:
+    - npm version
+    - git push --follow-tags
+    - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
+    - npm publish
