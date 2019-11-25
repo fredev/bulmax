@@ -47,6 +47,13 @@ export const hasDotSeparator: string = 'has-dot-separator';
 export const hasSucceedsSeparator: string = 'has-succeeds-separator';
 export const isClipped: string = 'is-clipped';
 export const isDelete: string = 'delete'; // cannot define delete, renamed as isDelete
+export const isSpaced: string = 'is-spaced';
+export const isOne: string = 'is-1';
+export const isTwo: string = 'is-2';
+export const isThree: string = 'is-3';
+export const isFour: string = 'is-4';
+export const isFive: string = 'is-5';
+export const isSix: string = 'is-6';
 
 // States
 export const isLoading: string = 'is-loading';
@@ -68,12 +75,8 @@ export const breadcrumb: string = 'breadcrumb';
 // Box
 export const box: string = 'box';
 
+// Title
+export const title: string = 'title';
+
 // Subtitle
 export const subTitle: string = 'subtitle';
-export const isOne: string = 'is-1';
-export const isTwo: string = 'is-2';
-export const isThree: string = 'is-3';
-export const isFour: string = 'is-4';
-export const isFive: string = 'is-5';
-export const isSix: string = 'is-6';
-export const isSpaced: string = 'is-spaced';
