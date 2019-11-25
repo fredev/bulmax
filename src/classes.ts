@@ -67,3 +67,13 @@ export const breadcrumb: string = 'breadcrumb';
 
 // Box
 export const box: string = 'box';
+
+// Subtitle
+export const subTitle: string = 'subtitle';
+export const isOne: string = 'is-1';
+export const isTwo: string = 'is-2';
+export const isThree: string = 'is-3';
+export const isFour: string = 'is-4';
+export const isFive: string = 'is-5';
+export const isSix: string = 'is-6';
+export const isSpaced: string = 'is-spaced';
