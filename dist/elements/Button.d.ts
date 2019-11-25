@@ -1,6 +1,7 @@
 import React from 'react';
 interface ButtonProps {
     children: string;
+    disabled?: boolean;
     submit?: boolean;
     primary?: boolean;
     link?: boolean;
@@ -16,14 +17,6 @@ interface ButtonProps {
     outlined?: boolean;
     inverted?: boolean;
     loading?: boolean;
-    p?: boolean;
-    l?: boolean;
-    i?: boolean;
-    s?: boolean;
-    w?: boolean;
-    d?: boolean;
-    r?: boolean;
-    li?: boolean;
     rounded?: boolean;
     onClick?(event: React.MouseEvent<HTMLButtonElement>): void;
 }

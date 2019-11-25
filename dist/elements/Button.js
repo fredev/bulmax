@@ -3,17 +3,17 @@ import { button, isDanger, isInfo, isLink, isPrimary, isRounded, isSuccess, isWa
 import classNames from "classnames";
 var Button = function (_a) {
     var _b;
-    var children = _a.children, submit = _a.submit, light = _a.light, primary = _a.primary, success = _a.success, link = _a.link, info = _a.info, warning = _a.warning, danger = _a.danger, small = _a.small, normal = _a.normal, medium = _a.medium, large = _a.large, rounded = _a.rounded, outlined = _a.outlined, inverted = _a.inverted, loading = _a.loading, li = _a.li, p = _a.p, s = _a.s, l = _a.l, i = _a.i, w = _a.w, d = _a.d, r = _a.r, onClick = _a.onClick;
+    var children = _a.children, disabled = _a.disabled, submit = _a.submit, light = _a.light, primary = _a.primary, success = _a.success, link = _a.link, info = _a.info, warning = _a.warning, danger = _a.danger, small = _a.small, normal = _a.normal, medium = _a.medium, large = _a.large, rounded = _a.rounded, outlined = _a.outlined, inverted = _a.inverted, loading = _a.loading, onClick = _a.onClick;
     var classes = classNames((_b = {},
         _b[button] = true,
-        _b[isPrimary] = primary || p,
-        _b[isSuccess] = success || s,
-        _b[isLink] = link || l,
-        _b[isInfo] = info || i,
-        _b[isWarning] = warning || w,
-        _b[isDanger] = danger || d,
-        _b[isRounded] = rounded || r,
-        _b[isLight] = light || li,
+        _b[isPrimary] = primary,
+        _b[isSuccess] = success,
+        _b[isLink] = link,
+        _b[isInfo] = info,
+        _b[isWarning] = warning,
+        _b[isDanger] = danger,
+        _b[isRounded] = rounded,
+        _b[isLight] = light,
         _b[isSmall] = small,
         _b[isNormal] = normal,
         _b[isMedium] = medium,
@@ -23,12 +23,13 @@ var Button = function (_a) {
         _b[isLoading] = loading,
         _b));
     if (submit) {
-        return (React.createElement("input", { className: "button", type: "submit", value: children }));
+        return (React.createElement("input", { className: classes, type: "submit", value: children, disabled: disabled }));
     }
-    return (React.createElement("button", { className: classes, onClick: onClick }, children));
+    return (React.createElement("button", { className: classes, onClick: onClick, disabled: disabled }, children));
 };
 Button.defaultProps = {
     children: 'Button',
+    disabled: false,
     submit: false,
     primary: false,
     success: false,
@@ -42,14 +43,6 @@ Button.defaultProps = {
     normal: false,
     medium: false,
     large: false,
-    p: false,
-    l: false,
-    i: false,
-    s: false,
-    w: false,
-    d: false,
-    r: false,
-    li: false,
 };
 export default Button;
 //# sourceMappingURL=Button.js.map
