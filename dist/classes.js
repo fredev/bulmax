@@ -41,6 +41,13 @@ export var hasDotSeparator = 'has-dot-separator';
 export var hasSucceedsSeparator = 'has-succeeds-separator';
 export var isClipped = 'is-clipped';
 export var isDelete = 'delete'; // cannot define delete, renamed as isDelete
+export var isSpaced = 'is-spaced';
+export var isOne = 'is-1';
+export var isTwo = 'is-2';
+export var isThree = 'is-3';
+export var isFour = 'is-4';
+export var isFive = 'is-5';
+export var isSix = 'is-6';
 // States
 export var isLoading = 'is-loading';
 // Modal
@@ -57,4 +64,8 @@ export var modalClose = 'modal-close';
 export var breadcrumb = 'breadcrumb';
 // Box
 export var box = 'box';
+// Title
+export var title = 'title';
+// Subtitle
+export var subTitle = 'subtitle';
 //# sourceMappingURL=classes.js.map
