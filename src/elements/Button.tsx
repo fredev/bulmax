@@ -1,19 +1,19 @@
 import React from 'react';
 import {
   button,
-  isDanger, 
-  isInfo, 
-  isLink, 
-  isPrimary, 
-  isRounded, 
-  isSuccess, 
-  isWarning, 
-  isLight, 
-  isSmall, 
-  isNormal, 
-  isMedium, 
-  isLarge, 
-  isOutlined, 
+  isDanger,
+  isInfo,
+  isLink,
+  isPrimary,
+  isRounded,
+  isSuccess,
+  isWarning,
+  isLight,
+  isSmall,
+  isNormal,
+  isMedium,
+  isLarge,
+  isOutlined,
   isInverted,
   isLoading,
 }
@@ -22,6 +22,7 @@ import classNames from "classnames";
 
 interface ButtonProps {
   children: string
+  disabled?: boolean
   submit?: boolean
   primary?: boolean
   link?: boolean
@@ -37,23 +38,15 @@ interface ButtonProps {
   outlined?: boolean
   inverted?: boolean
   loading?: boolean
-
-  p?: boolean // primary
-  l?: boolean // link
-  i?: boolean // info
-  s?: boolean // success
-  w?: boolean // warning
-  d?: boolean // danger
-  r?: boolean // rounded
-  li?: boolean // light
-
   rounded?: boolean
+
   onClick?(event: React.MouseEvent<HTMLButtonElement>): void;
 }
 
 const Button: React.FC<ButtonProps> = (
   {
     children,
+    disabled,
     submit,
     light,
     primary,
@@ -70,22 +63,19 @@ const Button: React.FC<ButtonProps> = (
     outlined,
     inverted,
     loading,
-    li,
-    p, s, l,
-    i, w, d, r,
     onClick,
   }
 ) => {
   const classes = classNames({
     [button]: true,
-    [isPrimary]: primary || p,
-    [isSuccess]: success || s,
-    [isLink]: link || l,
-    [isInfo]: info || i,
-    [isWarning]: warning || w,
-    [isDanger]: danger || d,
-    [isRounded]: rounded || r,
-    [isLight]: light || li,
+    [isPrimary]: primary,
+    [isSuccess]: success,
+    [isLink]: link,
+    [isInfo]: info,
+    [isWarning]: warning,
+    [isDanger]: danger,
+    [isRounded]: rounded,
+    [isLight]: light,
     [isSmall]: small,
     [isNormal]: normal,
     [isMedium]: medium,
@@ -97,17 +87,29 @@ const Button: React.FC<ButtonProps> = (
 
   if (submit) {
     return (
-      <input className="button" type="submit" value={children} />
+      <input
+        className={classes}
+        type="submit"
+        value={children}
+        disabled={disabled}
+      />
     )
   }
 
   return (
-      <button className={classes} onClick={onClick}>{children}</button>
+    <button
+      className={classes}
+      onClick={onClick}
+      disabled={disabled}
+    >
+      {children}
+    </button>
   )
 };
 
 Button.defaultProps = {
   children: 'Button',
+  disabled: false,
   submit: false,
   primary: false,
   success: false,
@@ -121,14 +123,6 @@ Button.defaultProps = {
   normal: false,
   medium: false,
   large: false,
-  p: false,
-  l: false,
-  i: false,
-  s: false,
-  w: false,
-  d: false,
-  r: false,
-  li: false,
 };
 
 export default Button;
