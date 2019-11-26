@@ -22,6 +22,9 @@ export const isWarning: string = 'is-warning';
 export const isDanger: string = 'is-danger';
 export const isLight: string = 'is-light';
 export const isRounded: string = 'is-rounded';
+export const isDark: string = 'is-dark';
+export const isBlack: string = 'is-black';
+export const isWhite: string = 'is-white';
 
 // Sizes
 export const isSmall: string = 'is-small';
@@ -80,3 +83,6 @@ export const title: string = 'title';
 
 // Subtitle
 export const subTitle: string = 'subtitle';
+
+// Tag
+export const tag : string = 'tag';
