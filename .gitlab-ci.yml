@@ -11,5 +11,15 @@ publish:
   only:
     - master
   script:
+    - npm i
+    - npm run build
     - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
     - npm publish
+
+test_publish:
+  stage: publish
+  only:
+    - feature/remove-dist-folder
+  script:
+    - npm i
+    - npm run build
