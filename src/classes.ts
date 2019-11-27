@@ -86,3 +86,32 @@ export const subTitle: string = 'subtitle';
 
 // Tag
 export const tag : string = 'tag';
+
+// Image
+export const image : string = 'image';
+
+// Image Sizes and Ratios
+export const is16x16 : string = 'is-16x16';
+export const is24x24 : string = 'is-24x24';
+export const is32x32 : string = 'is-32x32';
+export const is48x48 : string = 'is-48x48';
+export const is64x64 : string = 'is-64x64';
+export const is96x96 : string = 'is-96x96';
+export const is128x128 : string = 'is-128x128';
+export const isOneByOne : string = 'is-1by1';
+export const isFiveByFour : string = 'is-5by4';
+export const isFourByThree : string = 'is-4by3';
+export const isThreeByTwo : string = 'is-3by2';
+export const isFiveByThree : string = 'is-5by3';
+export const isSixteenByNine : string = 'is-16by9';
+export const isTwoByOne : string = 'is-2by1';
+export const isThreeByOne : string = 'is-3by1';
+export const isFourByFive : string = 'is-4by5';
+export const isThreeByFour : string = 'is-3by4';
+export const isTwoByThree : string = 'is-2by3';
+export const isThreeByFive : string = 'is-3by5';
+export const isNineBySixteen : string = 'is-9by16';
+export const isOneByTwo : string = 'is-1by2';
+export const isOneByThree : string = 'is-1by3';
+export const isSquared: string = 'is-square';
+export const isFullWidth: string = 'is-fullwidth';
