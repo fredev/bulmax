@@ -87,6 +87,9 @@ export const subTitle: string = 'subtitle';
 // Tag
 export const tag : string = 'tag';
 
+// Content
+export const content : string = 'content';
+
 // Image
 export const image : string = 'image';
 
