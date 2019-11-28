@@ -90,6 +90,9 @@ export const tag : string = 'tag';
 // Content
 export const content : string = 'content';
 
+// Notification
+export const notification : string = 'notification';
+
 // Image
 export const image : string = 'image';
 
