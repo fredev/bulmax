@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "description": "Bulmax root package",
+  "repository": "git@gitlab.com:bulmax/bulmax.git",
+  "author": "Federico Paletta <federico.paletta88@gmail.com>",
+  "contributors": [
+    "Alessandro Camplese <ale.camplese@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "bulmax:storybook": "yarn workspace @bulmax/bulmax storybook",
+    "bulmax:pre": "yarn workspace @bulmax/bulmax run version:pre"
+  }
+}
