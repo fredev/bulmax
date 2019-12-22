@@ -6,6 +6,6 @@
   },
   "scripts": {
     "boot": "lerna bootstrap",
-    "bulmax:stories": "lerna run --scope=@bulmax/bulmax --streab storybook"
+    "bulmax:stories": "lerna run --scope=@bulmax/bulmax storybook --stream"
   }
 }
