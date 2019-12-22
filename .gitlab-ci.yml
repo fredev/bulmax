@@ -9,7 +9,7 @@ stages:
 publish:
   stage: publish
   only:
-    - master
+    - disabled
   script:
     - npm i
     - npm run build

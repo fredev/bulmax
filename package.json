@@ -1,64 +1,16 @@
 {
-  "name": "@bulmax/bulmax",
-  "version": "1.0.0-19",
-  "description": "Bulma react components",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist",
-    "README.md"
-  ],
-  "scripts": {
-    "build": "rimraf dist && tsc && rimraf dist/stories",
-    "storybook": "start-storybook",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fredev/bulmax.git"
-  },
-  "keywords": [
-    "bulma",
-    "ui",
-    "react",
-    "components",
-    "typescript"
-  ],
-  "author": "Federico Paletta <feligida63@gmail.com>",
+  "name": "root",
+  "description": "Bulmax root package",
+  "repository": "git@gitlab.com:bulmax/bulmax.git",
+  "author": "Federico Paletta <federico.paletta88@gmail.com>",
   "contributors": [
     "Alessandro Camplese <ale.camplese@gmail.com>"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fredev/bulmax/issues"
-  },
-  "homepage": "https://github.com/fredev/bulmax#readme",
-  "dependencies": {
-    "@types/classnames": "^2.2.9",
-    "@types/jest": "^24.0.23",
-    "@types/react": "^16.9.11",
-    "classnames": "^2.2.6"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.7.2",
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-brands-svg-icons": "^5.11.2",
-    "@fortawesome/free-regular-svg-icons": "^5.11.2",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@storybook/addon-info": "^5.2.6",
-    "@storybook/react": "^5.2.6",
-    "awesome-typescript-loader": "^5.2.1",
-    "babel-loader": "^8.0.6",
-    "bulma": "^0.8.0",
-    "jest": "^24.9.0",
-    "react-docgen-typescript-loader": "^3.3.0",
-    "rimraf": "^3.0.0",
-    "storybook": "^5.1.11",
-    "ts-jest": "^24.1.0",
-    "typescript": "^3.7.2"
-  },
-  "peerDependencies": {
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "bulmax:storybook": "yarn workspace @bulmax/bulmax storybook",
+    "bulmax:pre": "yarn workspace @bulmax/bulmax run version:pre"
   }
 }
