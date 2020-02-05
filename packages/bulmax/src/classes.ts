@@ -61,6 +61,10 @@ export const isSix: string = 'is-6';
 // States
 export const isLoading: string = 'is-loading';
 
+// Navbar
+export const navLink : string = 'navbar-link';
+export const isArrowless : string = 'is-arrowless';
+
 // Modal
 export const modal: string = 'modal';
 export const modalBackground: string = 'modal-background';
