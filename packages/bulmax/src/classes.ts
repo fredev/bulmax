@@ -25,6 +25,7 @@ export const isRounded: string = 'is-rounded';
 export const isDark: string = 'is-dark';
 export const isBlack: string = 'is-black';
 export const isWhite: string = 'is-white';
+export const isTransparent: string = 'is-transparent'
 
 // Sizes
 export const isSmall: string = 'is-small';
@@ -62,8 +63,13 @@ export const isSix: string = 'is-6';
 export const isLoading: string = 'is-loading';
 
 // Navbar
+export const navbar: string = 'navbar';
+export const navBarDropdown : string = 'navbar-dropdown';
 export const navLink : string = 'navbar-link';
 export const isArrowless : string = 'is-arrowless';
+export const isBoxed : string = 'is-boxed';
+export const fixedTop: string = 'is-fixed-top';
+export const fixedBottom: string = 'is-fixed-bottom';
 
 // Modal
 export const modal: string = 'modal';
