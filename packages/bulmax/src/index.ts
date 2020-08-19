@@ -22,6 +22,14 @@ export { default as ModalCardTitle } from './components/ModalCardTitle';
 export { default as ModalClose } from './components/ModalClose';
 export { default as ModalContent } from "./components/ModalContent";
 
+// Navbar
+export { default as NavbarDropdown } from './components/NavbarDropdown';
+export { default as NavbarLink } from './components/NavbarLink';
+
+// Typography
+export { default as Title } from './components/Title';
+export { default as Subtitle } from './components/Subtitle';
+
 // Box element
 export { default as Box } from './elements/Box';
 
