@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import classNames from 'classnames';
-import { isBoxed, navBarDropdown, isRight } from 'classes';
+import { isBoxed, navBarDropdown, isRight } from '../classes';
 
 interface NavbarDropdown {
   children: ReactElement | ReactElement[],
