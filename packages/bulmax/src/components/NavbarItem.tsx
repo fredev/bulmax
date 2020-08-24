@@ -3,9 +3,8 @@ import className from 'classnames';
 import { hasDropdown, isHoverable, isExpanded, isTab, hasDropdownUp, navbarItem } from '../classes';
 
 interface NavbarItemProps {
-  children?: ReactElement | ReactElement[],
+  children?: ReactElement | ReactElement[] | string,
   navbarItem?: boolean,
-  text?: string,
   dropdown?: boolean,
   hoverable?: boolean,
   expanded?: boolean,
@@ -14,7 +13,7 @@ interface NavbarItemProps {
 }
 
 
-const NavbarItem: React.FC<NavbarItemProps> = ({ children, text, dropdown, hoverable, expanded, tab, dropdownUp }) => {
+const NavbarItem: React.FC<NavbarItemProps> = ({ children, dropdown, hoverable, expanded, tab, dropdownUp }) => {
 
   const classes = className({
     [navbarItem]: true,
@@ -27,7 +26,7 @@ const NavbarItem: React.FC<NavbarItemProps> = ({ children, text, dropdown, hover
 
   return (
     <a className={classes}>
-      {children || text}
+      {children}
     </a>
   );
 
