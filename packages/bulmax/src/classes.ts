@@ -25,6 +25,7 @@ export const isRounded: string = 'is-rounded';
 export const isDark: string = 'is-dark';
 export const isBlack: string = 'is-black';
 export const isWhite: string = 'is-white';
+export const isTransparent: string = 'is-transparent'
 
 // Sizes
 export const isSmall: string = 'is-small';
@@ -60,6 +61,30 @@ export const isSix: string = 'is-6';
 
 // States
 export const isLoading: string = 'is-loading';
+
+// Navbar
+export const navbar: string = 'navbar';
+export const burger: string = 'burger';
+export const navBarDropdown : string = 'navbar-dropdown';
+export const navLink : string = 'navbar-link';
+export const isArrowless : string = 'is-arrowless';
+export const isBoxed : string = 'is-boxed';
+export const fixedTop: string = 'is-fixed-top';
+export const fixedBottom: string = 'is-fixed-bottom';
+export const navbarEnd: string = 'navbar-end';
+export const navbarDivider: string = 'navbar-divider';
+export const navbarStart: string = 'navbar-start';
+export const navbarMenu: string = 'navbar-menu';
+export const navbarItem: string = 'navbar-item';
+export const navbarBrand: string = 'navbar-brand';
+export const navbarBurger: string = 'navbar-burger';
+export const hasDropdown: string = 'has-dropdown';
+export const hasNavbarFixedTop: string = 'has-navbar-fixed-top';
+export const hasNavbarFixedBottom: string = 'has-navbar-fixed-bottom';
+export const isHoverable: string = 'is-hoverable';
+export const isExpanded: string = 'is-expanded';
+export const isTab: string = 'is-tab';
+export const hasDropdownUp: string = 'has-dropdown-up';
 
 // Modal
 export const modal: string = 'modal';

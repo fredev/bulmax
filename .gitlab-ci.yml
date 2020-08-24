@@ -9,9 +9,16 @@ stages:
 publish:
   stage: publish
   only:
-    - master
+    - disabled
   script:
     - npm i
     - npm run build
     - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
     - npm publish
+
+publish_bulmax_pre:
+  stage: publish
+  only:
+    - release/bulmax
+  script:
+    - echo 'bulmax pre release start'
