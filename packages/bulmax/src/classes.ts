@@ -59,6 +59,11 @@ export const isFour: string = 'is-4';
 export const isFive: string = 'is-5';
 export const isSix: string = 'is-6';
 
+// Message
+export const message: string = 'message';
+export const messageHeader: string = 'message-header';
+export const messageBody: string = 'message-body';
+
 // States
 export const isLoading: string = 'is-loading';
 
